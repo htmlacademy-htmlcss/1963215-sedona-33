@@ -42,6 +42,8 @@
       line-height: 26px;
       text-align: center;
       text-decoration: none;
+      text-transform: uppercase;
+      color:#000;
   }
   .button-navigation{
     font-size: 16px;
@@ -50,12 +52,13 @@
     color:#fff;
     border-radius: 4px;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   .main-index{
       background-color: #fff;
       color: #000;
-      background-image: url("images/background-index.jpg");
+      background-image: url("../images/background-index.jpg");
       background-size: 100% auto;
       background-repeat: no-repeat;
   }
@@ -66,6 +69,7 @@
     text-align: center;
   }
   .main-title-2{
+    font-weight: 400;
     font-size: 22px;
     line-height: 36px;
     text-align: center; 
@@ -80,12 +84,11 @@
       color: #fff;
   }
   .text-item-2{
-      background-color: #83B3D3;
-      opacity: 0,12;
-  }
+      background-color: rgba(131, 179, 211, 0.12);
+      }
+
   .text-item-3{
-      background-color: #83B3D3;
-      opacity: 0,2;
+      background-color: rgba(131, 179, 211, 0.2);
   }
 
   .interest{
@@ -99,6 +102,7 @@
   }
 
   .interest h3{
+    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
   }
@@ -112,10 +116,9 @@
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
+    text-transform: uppercase;
   }
   .subscription{
-      background-image: url("image/background-subscription");
-      background-size: 100% auto;
       text-align: center;
   } 
   .subscription h2{
@@ -124,8 +127,21 @@
     line-height: 36px;
   }
   .subscription h3{
+    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+  }
+  .main-subscription{
+    background-image: url("../images/background-subscription.jpg");
+    background-size: 100% auto;
+    color:#fff;
+  }
+  .newsletter-button{
+    font-size: 20px;
+    line-height: 26px;
+    background: #83B3D3;
+    border-radius: 0px 10px 10px 0px;
+    color:#fff;
   }
 
   .footer-contacts-address-phone{
@@ -139,9 +155,10 @@
   /* каталог*/
 
   .catalog-hotels{
-      background-image: url("image/background-catalog.jpg");
+      background-image: url("../images/background-catalog.jpg");
       background-size: 100% auto;
       color:#fff;
+      background-repeat: no-repeat;
   }
   .catalog-hotels h1{
     font-weight: 700;
@@ -169,6 +186,7 @@
     text-align: center;
     text-transform: uppercase;
     background-color: #83B3D3;
+    color:#fff;
     border-radius: 4px;
   }
   .choose-hotels h2{
@@ -180,12 +198,20 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
+    color:#000;
+    text-decoration: none;
+  }
+
+  .hotel-card-link{
+    color:#000;
+    text-decoration: none;
   }
 
   .hotel-card-button{
     font-size: 16px;
     line-height: 21px
     }
+    
   .button-detailed{
     background: #756257;
     color: #fff;
