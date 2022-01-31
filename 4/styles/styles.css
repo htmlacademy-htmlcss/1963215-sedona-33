@@ -1,0 +1,230 @@
+@font-face{
+    font-family: "PT SANS";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/pt-sans-italic.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #fff;
+    color: #000;
+  }
+  .navigation-link{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      text-decoration: none;
+  }
+  .button-navigation{
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #756257;
+    color:#fff;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .main-index{
+      background-color: #fff;
+      color: #000;
+      background-image: url("images/background-index.jpg");
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+  }
+  .main-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .main-title-2{
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center; 
+  }
+
+  .advantages-item{
+    text-align: center;
+
+  }
+  .text-item-1{
+      background-color: #83B3D3;
+      color: #fff;
+  }
+  .text-item-2{
+      background-color: #83B3D3;
+      opacity: 0,12;
+  }
+  .text-item-3{
+      background-color: #83B3D3;
+      opacity: 0,2;
+  }
+
+  .interest{
+      text-align: center;
+  }
+
+  .interest h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .interest h3{
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .button-search{
+    background: #756257;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .subscription{
+      background-image: url("image/background-subscription");
+      background-size: 100% auto;
+      text-align: center;
+  } 
+  .subscription h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .subscription h3{
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .footer-contacts-address-phone{
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color:#000;
+  }
+
+  /* каталог*/
+
+  .catalog-hotels{
+      background-image: url("image/background-catalog.jpg");
+      background-size: 100% auto;
+      color:#fff;
+  }
+  .catalog-hotels h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+  }
+  .breadcrumbs-link{
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .catalog-filter-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .catalog-filter-item{
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .button-filter{
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #83B3D3;
+    border-radius: 4px;
+  }
+  .choose-hotels h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .hotel-card-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .hotel-card-button{
+    font-size: 16px;
+    line-height: 21px
+    }
+  .button-detailed{
+    background: #756257;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    }
+    .button-favourites{
+    background: #83B3D3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    }
+    .button-favourites-on{
+     background: #7DB54F;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 4px;
+    }
+.upload{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    background: #83B3D3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.numbers{
+    background: #83B3D3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.numbers-on{
+    background:#F2F2F2;
+    color: #000;
+
+}
