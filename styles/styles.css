@@ -412,3 +412,20 @@ text-align: center;
     color: #000;
 
 }
+
+/* Стили кнопок*/
+.button-navigation:hover{
+  background-color: #615048;
+}
+.button-navigation:active{
+  background-color: #615048;
+}
+
+.button-search:hover{
+  background-color: #615048;
+}
+
+
+.newsletter-button:hover{
+  background-color: #68A2CA;
+}
