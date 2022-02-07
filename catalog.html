@@ -8,8 +8,11 @@
 
   <body>
      <header class="page-header">
-        <img class="page-header-logo" alt="Логотип компании" src="images/logo.svg" width="139" height="70">
+        
         <nav class="navigation">
+          <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" alt="Логотип компании" src="images/logo.svg" width="139" height="70">
+            </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -37,7 +40,8 @@
             </ul>
           </nav>
         </header>
-        <main class="main-inner">
+        <main class="main-inner main-container">
+          <div class="page-container">
             <section class="catalog-hotels">
                 <h1>Гостиницы Седоны</h1>
                 <ul class="breadcrumbs">
@@ -104,7 +108,7 @@
             </form>
             </section>
             <section class="choose-hotels">
-                <h2>НАЙДЕНО ГОСТИНИЦ:</h2>
+                <h2 class="find-hotels-title">НАЙДЕНО ГОСТИНИЦ:</h2>
                 <select class="select-control" aria-label="Сортировка">
                     <option value="popular">Сначала дешёвые</option>
                     <option value="cheap">Сначала популярные</option>
@@ -170,24 +174,26 @@
                         <img class="rating-star" src="images/star.svg" alt="Рейтинг отеля">
                     </li>
                 </ul>
-                      <a class="upload" href="#">Загрузить ещё</a>
+                <div class="upload-conteiner">
+                <a class="upload" href="#">Загрузить ещё</a>
+                </div>
                 <ul class="choose-pages">
-                        <li>
+                        <li class="number-page">
                           <a class="numbers numbers-on" href="#">1</a>
                         </li>
-                        <li>
+                        <li class="number-page">
                           <a class="numbers" href="#">2</a>
                         </li>
-                        <li>
+                        <li class="number-page">
                           <a class="numbers" href="#">3</a>
                         </li>
-                        <li>
+                        <li class="number-page">
                           <a class="numbers" href="#">4</a>
                         </li>
-                        <li>
+                        <li class="number-page">
                           <a class="numbers" href="#">...</a>
                         </li>
-                        <li>
+                        <li class="number-page">
                           <a class="numbers" href="#">10</a>
                         </li>
                 </ul>
@@ -214,9 +220,11 @@
               </button>
             </form>
           </article>
+         </div>
         </main>
 
         <footer class="page-footer">
+          <div class="page-footer-container">
             <section class="footer-contacts">
               <h2 class="visually-hidden">Контакты</h2>
               <ul class="footer-social-list">
@@ -245,7 +253,7 @@
               </a>
               </p>
             </section>
-          
+           </div> 
           </footer>
   </body>
 </html>
