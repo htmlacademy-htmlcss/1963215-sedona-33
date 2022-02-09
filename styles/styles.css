@@ -45,6 +45,16 @@
     color: #000;
   }
 
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  } 
     /* Шапка */
     .navigation {
       display: flex;
@@ -52,7 +62,17 @@
       margin: 0 auto;
     }
 
+    .navigation-list{
+      display: flex;
+      width: 400px;
+      margin: 0;
+      padding: 0;
+    }
+
   .navigation-link{
+      display: block;
+      flex-wrap: wrap; 
+      padding: 20px 17px;
       font-weight: 700;
       font-size: 20px;
       line-height: 26px;
@@ -60,6 +80,10 @@
       text-decoration: none;
       text-transform: uppercase;
       color:#000;
+  }
+  .navigation-user .navigation-link {
+    min-width: 42px;
+    min-height: 66px;
   }
 
   .button-navigation{
@@ -82,7 +106,7 @@
   }
 
   .navigation-user {
-    max-width: 270px;
+    max-width: 280px;
     margin-left: auto;
   }
   .navigation-logo {
@@ -95,11 +119,14 @@
     /* Основное содержание */
     .main-container {
       flex-grow: 1;
-    }
+      
+      }
+
     .welcome{
       background-image: url("../images/background-index.jpg");
-      background-size: 100% 485px;
+      background-size: cover;
       background-repeat: no-repeat;
+      
     }
   .main-index{
       background-color: #fff;
@@ -123,9 +150,9 @@
   }
   .logo {
     display: block;
-    margin: 0 auto;
+    margin: 51px auto 25px;
   }
-
+  
   .advantages-list{
   display: flex;
   flex-wrap: wrap;
@@ -133,6 +160,10 @@
   padding: 0;
   list-style-type: none;
   }
+
+  .advantages-description {
+    margin: 0;
+  } 
 
   .advantages-item{
     width: 400px;
@@ -189,6 +220,8 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    padding-top: 92px;
+    
   }
   .subscription h3{
     font-weight: 400;
@@ -199,6 +232,9 @@
     background-image: url("../images/background-subscription.jpg");
     background-size: 100% auto;
     color:#fff;
+    width: 1200px;
+    height: 411px;
+    
   }
   .newsletter-button{
     font-size: 20px;
@@ -230,6 +266,16 @@
     width: 110px;
     list-style-type: none;
   }
+  .footer-social-item{
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  
+  .footer-social-item:nth-child(3n) {
+    margin-right: 0;
+  
+  }
   .about-text{
     display:inline-block;
    max-width: 120px;
@@ -246,6 +292,8 @@
       color:#fff;
       background-repeat: no-repeat;
       height: 408px;
+      padding-left: 72px;
+      box-sizing: border-box;
   }
   
   .catalog-hotels h1{
@@ -253,21 +301,20 @@
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
-    margin-left: 72px;
-    margin-right: 500px;
+    margin: 0;
     
     
   }
   .catalog-filter-group{
     display: flex;
-    margin-left: 72px;
   }
 
    .breadcrumbs{
      display: flex;
-     margin-left: 72px;
-     margin-right: 600px;
-    list-style-type: none;
+     width: 100%;
+     margin: 0;
+     padding: 0; 
+     list-style-type: none;
   }
 
   .breadcrumbs-link{
@@ -306,9 +353,8 @@
     font-size: 30px;
     line-height: 39px;
   }
-
   .find-hotels-title{
-margin-left: 72px;
+   margin-left: 72px;
   }
 
   .hotel-list{
