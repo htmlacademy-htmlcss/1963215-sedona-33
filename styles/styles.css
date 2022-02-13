@@ -83,7 +83,7 @@
   }
   .navigation-user .navigation-link {
     min-width: 42px;
-    min-height: 66px;
+    
   }
 
   .button-navigation{
@@ -101,7 +101,7 @@
   .navigation-list{
     margin: 0;
     padding: 0;
-    width: 345px;
+    width: 640px;
     list-style-type: none;
   }
 
@@ -137,12 +137,15 @@
     font-size: 30px;
     line-height: 36px;
     text-align: center;
+    padding-top:63px ;
+    margin-bottom: 9px;
   }
   .main-title-2{
     font-weight: 400;
     font-size: 22px;
     line-height: 36px;
     text-align: center; 
+    margin-bottom: 93px;
   }
   .page-container {
     width: 1200px;
@@ -150,7 +153,9 @@
   }
   .logo {
     display: block;
-    margin: 51px auto 25px;
+    margin: 0 auto;
+    padding-top: 51px;
+    padding-bottom: 25px;
   }
   
   .advantages-list{
@@ -193,14 +198,19 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    padding-top: 91px;
+    margin-bottom: 15px;
   }
 
   .interest h3{
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    margin-bottom: 40px;
   }
-
+  .field{
+    margin-bottom: 108px;
+  }
   .button-search{
     background: #756257;
     color: #fff;
@@ -212,6 +222,7 @@
     border-radius: 10px;
     text-transform: uppercase;
     padding: 15px;
+    
   }
   .subscription{
       text-align: center;
@@ -221,7 +232,7 @@
     font-size: 30px;
     line-height: 36px;
     padding-top: 92px;
-    
+    margin-bottom: 15px;
   }
   .subscription h3{
     font-weight: 400;
@@ -305,9 +316,6 @@
     
     
   }
-  .catalog-filter-group{
-    display: flex;
-  }
 
    .breadcrumbs{
      display: flex;
@@ -323,7 +331,7 @@
   }
 
   .catalog-filter-list{
-    display: flex;
+    
     margin: 0;
     padding: 0;
     list-style-type: none;
