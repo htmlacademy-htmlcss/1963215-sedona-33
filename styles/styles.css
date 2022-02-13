@@ -55,11 +55,16 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   } 
+
+  .page-header{
+    
+  }
     /* Шапка */
     .navigation {
       display: flex;
-      width: 1060px;
+      
       margin: 0 auto;
+      
     }
 
     .navigation-list{
@@ -99,7 +104,7 @@
   }
 
   .navigation-list{
-    margin-left: 30px;
+    margin-left: 70px;
     padding: 0;
     width: 640px;
     list-style-type: none;
@@ -111,10 +116,11 @@
   }
   .navigation-logo {
     width: 140px;
+    margin-right: 30px;
   }
   .page-header-logo{
     margin-left: 70px;
-    margin-right: 30px;
+    
   }
   
 
@@ -140,7 +146,7 @@
     font-size: 30px;
     line-height: 36px;
     text-align: center;
-    padding-top:63px ;
+    padding-top:92px ;
     margin-bottom: 9px;
     text-transform: uppercase;
   }
