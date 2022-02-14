@@ -57,7 +57,7 @@
   } 
 
   .page-header{
-    
+    min-height: 65px;
   }
     /* Шапка */
     .navigation {
@@ -135,19 +135,22 @@
       background-image: url("../images/background-index.jpg");
       background-size: cover;
       background-repeat: no-repeat;
+      height: 485px;
       
     }
   .main-index{
       background-color: #fff;
       color: #000;
   }
+  .description{
+   padding-top: 30px;
+  }
   .main-title{
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
-    padding-top:92px ;
-    margin-bottom: 9px;
+    margin-bottom: -5px;
     text-transform: uppercase;
   }
   .main-title-2{
