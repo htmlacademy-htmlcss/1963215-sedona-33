@@ -186,10 +186,17 @@
   .advantages-item{
     width: 400px;
     text-align: center;
+    padding: 89px;
+    box-sizing: border-box;
+    
 
   }
   .advantages-photo{
     width: 800px;
+  }
+
+  .advantages-title{
+    text-transform: uppercase;
   }
   .text-item-1{
       background-color: #83B3D3;
@@ -205,24 +212,25 @@
 
   .interest{
       text-align: center;
+      margin-bottom: 120px;
   }
 
   .interest h2{
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    padding-top: 91px;
-    margin-bottom: 15px;
+    padding-top:65px;
   }
 
   .interest h3{
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    margin-bottom: 40px;
+    padding-bottom: 35px;
   }
   .field{
-    margin-bottom: 108px;
+    width:575px;
+    
   }
   .button-search{
     background: #756257;
@@ -251,6 +259,8 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    padding-top: 10px;
+    padding-bottom: 25px;
   }
   .main-subscription{
     background-image: url("../images/background-subscription.jpg");
@@ -268,12 +278,10 @@
     color:#fff;
   }
          /* Подвал */
-  .page-footer-container {
-    display: flex;
-    justify-content: space-around;
-    width: 1200px;
-    margin: 0 auto;
-  }
+ 
+  .footer-contacts{
+   text-align: center;
+         }
   .footer-contacts-address-phone{
     display:inline-block;
     width: 720px;
