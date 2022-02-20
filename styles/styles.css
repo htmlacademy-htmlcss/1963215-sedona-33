@@ -2,7 +2,7 @@
     font-family: "PT SANS";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -182,6 +182,9 @@
   .advantages-description {
     margin: 0;
   } 
+  .advantages-description-1{
+  margin-bottom: 25px;
+  }
 
   .advantages-item{
     width: 400px;
@@ -243,6 +246,8 @@
     border-radius: 10px;
     text-transform: uppercase;
     padding: 15px;
+    width: 575px;
+    display: inline-block;
     
   }
   .subscription{
@@ -272,7 +277,7 @@
   }
   .newsletter-button{
     font-size: 20px;
-    line-height: 26px;
+    line-height: 24px;
     background: #83B3D3;
     border-radius: 0px 10px 10px 0px;
     color:#fff;
@@ -334,6 +339,7 @@
     font-size: 60px;
     line-height: 78px;
     margin: 0;
+    padding-top: 35px;
     
     
   }
@@ -376,6 +382,9 @@
     background-color: #83B3D3;
     color:#fff;
     border-radius: 4px;
+    display: inline-block;
+    width: 160px;
+    height: 48px;
   }
   .choose-hotels h2{
     font-weight: 700;
@@ -384,6 +393,7 @@
   }
   .find-hotels-title{
    margin-left: 72px;
+   padding-top: 15px;
   }
 
   .hotel-list{
@@ -406,7 +416,11 @@
   .hotel-card:nth-child(4){
     margin-left: 72px;
   }
- 
+  .hotel-card-image{
+    width: 229px;
+    height: 220px;
+
+  }
 
   .hotel-card-title{
     font-weight: 700;
@@ -426,6 +440,9 @@
     line-height: 21px;
     padding-top: 9px;
     padding-bottom: 10px;
+    display: inline-block;
+    width: 141px;
+    text-align: center;
      }
     
   .button-detailed{
@@ -455,9 +472,13 @@
     text-decoration: none;
     border-radius: 4px;
     padding: 17px;
+    display: inline-block;
+    width: 620px;
     }
     .upload-conteiner{
-text-align: center;
+   text-align: center;
+   padding-top: 80px;
+   margin-bottom: 65px;
     }
 
 .choose-pages{
