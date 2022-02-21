@@ -24,21 +24,26 @@
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
-          </ul>>
+          </ul>
+          <div class="navigation-user-container">
             <ul class="navigation-list navigation-user">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span>
-                </a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link button-navigation" href="#">Хочу сюда!</a>
-              </li>
-            </ul>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">
+                    <span class="visually-hidden">Поиск</span>
+                    <img class="navigation-images" src="images/search.svg">
+                  </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">
+                    <span class="visually-hidden">Корзина</span>
+                    <img class="navigation-images" src="images/favorite.svg">
+                  </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link button-navigation" href="#">Хочу сюда!</a>
+                </li>
+              </ul>
+             </div>
           </nav>
         </header>
         <main class="main-inner main-container">
@@ -53,7 +58,7 @@
                       <a class="breadcrumbs-link">Гостиницы</a>
                     </li>
                 </ul>
-                   
+                   <div class="catalog-filter-group-container">
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Инфроструктура</legend>
                           <ul class="catalog-filter-list">
@@ -100,12 +105,15 @@
                           </li>
                         </ul>
                     </fieldset>
-            <form>
-                <p><input class="button-filter" type="button" value=" ПРИМЕНИТЬ "></p>
-            </form>
-            <form>
-                <p><input type="button" value=" Сбросить "></p>
-            </form>
+            <div class="button-filter-container">
+              <form>
+                  <p><input class="button-filter" type="button" value=" ПРИМЕНИТЬ "></p>
+              </form>
+              <form>
+                  <p><input type="button" value=" Сбросить "></p>
+              </form>
+            </div>
+            </div>
             </section>
             <section class="choose-hotels">
               <section class="search-hotels">
@@ -115,19 +123,20 @@
                     <option value="cheap">Сначала популярные</option>
                     <option value="expensive">Сначала дорогие</option>
                 </select>
-
+                <div class="sorting-buttons">
                   <a href="#" class="button">
                     <span class="visually-hidden">Показать по 3 элемента</span>
-                    <img class="sorting-image" src="sorting-1.svg" width="48" height="48">
+                    <img class="sorting-image" src="images/sorting-3.svg" width="48" height="48">
                   </a>
                   <a class="button" href="#">
                     <span class="visually-hidden">Показать по одному</span>
-                    <img class="sorting-image" src="sorting-1.svg" width="48" height="48">
+                    <img class="sorting-image" src="images/sorting-2.svg" width="48" height="48">
                   </a>
                   <a class="button" href="#">
                     <span class="visually-hidden">Показать списком</span>
-                    <img class="sorting-image" src="sorting-1.svg" width="48" height="48">
+                    <img class="sorting-image" src="images/sorting-1.svg" width="48" height="48">
                   </a>
+                </div>
                 </section>
                 <ul class="hotel-list">
                     <li class="hotel-card">
@@ -218,7 +227,7 @@
           </section>
 
 
-          <article class="subscription">
+          <article class="subscription subscription-catalog">
             <h2 class="subscription-catalog-title-1">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
             <h3 class="subscription-catalog-title-2">Только полезная информация и никакого спама,<br>честное бойскаутское!</h3>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -232,35 +241,42 @@
         </main>
 
         <footer class="page-footer">
-            <section class="footer-contacts">
-              <h2 class="visually-hidden">Контакты</h2>
+          <section class="footer-contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+              <div class="social-list">
               <ul class="footer-social-list">
                 <li class="footer-social-item">
                   <a class="button" href="https://twitter.com/htmlacademy_ru">
                     <span class="visually-hidden">Твиттер</span>
+                    <img class="social-images" src="images/social-tviter.svg" width="20" height="20">
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="button" href="https://www.facebook.com/htmlacademy">
                     <span class="visually-hidden">Фэйсбук</span>
+                    <img class="social-images" src="images/social-facebook.svg" width="20" height="20">
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
                     <span class="visually-hidden">Ютуб</span>
+                    <img class="social-images" src="images/social-youtube.svg" width="20" height="20">
                   </a>
                 </li>
               </ul>
-              <p class="footer-contacts-address-phone">
-              <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12
-              </a>
-              </p>
-              <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">
-                <span class="visually-hidden">Сделано в html.academy</span>
-              </a>
-              </p>
-            </section>
-          </footer>
+              </div>
+                <p class="footer-contacts-address-phone">
+                  <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12
+                  </a>
+                </p>
+                <p class="about-text">
+                  <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+                    <span class="visually-hidden">Сделано в html.academy</span>
+                    <img class="social-images" src="images/logo-htmlacademy.svg" width="115" height="35">
+                  </a>
+                </p>
+          </section>
+        </footer>
     </div>
   </body>
 </html>
