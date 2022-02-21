@@ -1,8 +1,8 @@
 @font-face{
-    font-family: "PT SANS";
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
 
@@ -229,7 +229,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    padding-bottom: 35px;
+    margin-bottom: 30px;
   }
   .field{
     width:575px;
@@ -253,19 +253,20 @@
   .subscription{
       text-align: center;
   } 
-  .subscription h2{
+  .subscription-title-1{
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    padding-top: 92px;
+    padding-top: 90px;
     margin-bottom: 15px;
+    margin: 0;
   }
-  .subscription h3{
+  .subscription-title-2{
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     padding-top: 10px;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
   }
   .main-subscription{
     background-image: url("../images/background-subscription.jpg");
@@ -281,6 +282,9 @@
     background: #83B3D3;
     border-radius: 0px 10px 10px 0px;
     color:#fff;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
   }
          /* Подвал */
  
@@ -332,6 +336,7 @@
       padding-left: 72px;
       box-sizing: border-box;
   }
+
   
   .catalog-hotels h1{
     
@@ -386,6 +391,11 @@
     width: 160px;
     height: 48px;
   }
+  .search-hotels{
+    display: flex;
+    justify-content: space-between;
+  }
+
   .choose-hotels h2{
     font-weight: 700;
     font-size: 30px;
@@ -406,8 +416,26 @@
   .hotel-card{
     width: 340px;
     height: 438px;
-    
     margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  .hotel-card-title{
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .hotel-paragraph{
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .hotel-card-image{
+    margin-bottom: 25px;
+  }
+
+  .hotel-card-link{
+    display: inline-block;
   }
 
   .hotel-card:first-child{
@@ -416,11 +444,7 @@
   .hotel-card:nth-child(4){
     margin-left: 72px;
   }
-  .hotel-card-image{
-    width: 229px;
-    height: 220px;
 
-  }
 
   .hotel-card-title{
     font-weight: 700;
@@ -477,8 +501,12 @@
     }
     .upload-conteiner{
    text-align: center;
-   padding-top: 80px;
+   padding-top: 70px;
    margin-bottom: 65px;
+    }
+    .choosing{
+  display: flex;
+  justify-content: space-between;
     }
 
 .choose-pages{
@@ -508,6 +536,17 @@
     color: #000;
 
 }
+
+.subscription-catalog-title-1{
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.subscription-catalog-title-2{
+  margin: 0;
+  margin-bottom: 50px;
+}
+
 
 /* Стили кнопок*/
 .button-navigation:hover{

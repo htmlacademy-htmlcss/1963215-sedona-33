@@ -108,6 +108,7 @@
             </form>
             </section>
             <section class="choose-hotels">
+              <section class="search-hotels">
                 <h2 class="find-hotels-title">НАЙДЕНО ГОСТИНИЦ:</h2>
                 <select class="select-control" aria-label="Сортировка">
                     <option value="popular">Сначала дешёвые</option>
@@ -116,22 +117,25 @@
                 </select>
 
                   <a href="#" class="button">
-                    <span class="visually-hidden">Показать по 3 элемнта</span>
+                    <span class="visually-hidden">Показать по 3 элемента</span>
+                    <img class="sorting-image" src="sorting-1.svg" width="48" height="48">
                   </a>
                   <a class="button" href="#">
                     <span class="visually-hidden">Показать по одному</span>
+                    <img class="sorting-image" src="sorting-1.svg" width="48" height="48">
                   </a>
                   <a class="button" href="#">
                     <span class="visually-hidden">Показать списком</span>
+                    <img class="sorting-image" src="sorting-1.svg" width="48" height="48">
                   </a>
-
+                </section>
                 <ul class="hotel-list">
                     <li class="hotel-card">
                       <a class="hotel-card-link" href="hotel.html">
-                        <img class="hotel-card-image" src="images/hotel-amara_resort_&_spa.jpg" alt="фотография Amara Resort & Spa">
+                        <img class="hotel-card-image" src="images/hotel-amara_resort_&_spa.jpg" width="300" height="206" alt="фотография Amara Resort & Spa">
                         <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                       </a>
-                      <p>Гостиница   От 4000 ₽</p>
+                      <p class="hotel-paragraph">Гостиница   От 4000 ₽</p>
                       <a class="hotel-card-button button-detailed" href="#">ПОДРОБНЕЕ</a>
                       <a class="hotel-card-button button-favourites" href="#">В ИЗБРАННОЕ</a>
                       <p class="rating">Рейтинг: 8,5</p>
@@ -140,10 +144,10 @@
                     </li>
                     <li class="hotel-card">
                         <a class="hotel-card-link" href="hotel.html">
-                          <img class="hotel-card-image" src="images/hotel-desert_quail_inn.jpg" alt="фотография Desert Quail Inn">
+                          <img class="hotel-card-image" src="images/hotel-desert_quail_inn.jpg" width="300" height="206" alt="фотография Desert Quail Inn">
                           <h3 class="hotel-card-title">Desert Quail Inn</h3>
                         </a>
-                        <p>Гостиница   От 3000 ₽</p>
+                        <p class="hotel-paragraph">Гостиница   От 3000 ₽</p>
                         <a class="hotel-card-button button-detailed" href="#">ПОДРОБНЕЕ</a>
                         <a class="hotel-card-button button-favourites" href="#">В ИЗБРАННОЕ</a>
                         <p class="rating">Рейтинг: 8,9</p>
@@ -152,10 +156,10 @@
                     </li>
                     <li class="hotel-card">
                         <a class="hotel-card-link" href="hotel.html">
-                          <img class="hotel-card-image" src="images/hotel-villas_at_roco_diablo.jpg" alt="фотография Villas at Poco Diablo">
+                          <img class="hotel-card-image" src="images/hotel-villas_at_roco_diablo.jpg " width="300" height="206" alt="фотография Villas at Poco Diablo">
                           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                         </a>
-                        <p>Гостиница   От 2000 ₽</p>
+                        <p class="hotel-paragraph">Гостиница   От 2000 ₽</p>
                         <a class="hotel-card-button button-detailed" href="#">ПОДРОБНЕЕ</a>
                         <a class="hotel-card-button button-favourites-on" href="#">В ИЗБРАННОM</a>
                         <p class="rating">Рейтинг: 9,2</p>
@@ -164,10 +168,10 @@
                     </li>
                     <li class="hotel-card">
                         <a class="hotel-card-link" href="hotel.html">
-                          <img class="hotel-card-image" src="images/hotel-greentree_inn.jpg" alt="фотография GreenTree Inn">
+                          <img class="hotel-card-image" src="images/hotel-greentree_inn.jpg" width="300" height="206" alt="фотография GreenTree Inn">
                           <h3 class="hotel-card-title">GreenTree Inn</h3>
                         </a>
-                        <p>Гостиница   От 3000 ₽</p>
+                        <p class="hotel-paragraph">Гостиница   От 3000 ₽</p>
                         <a class="hotel-card-button button-detailed" href="#">ПОДРОБНЕЕ</a>
                         <a class="hotel-card-button button-favourites" href="#">В ИЗБРАННОЕ</a>
                         <p class="rating">Рейтинг: 9,2</p>
@@ -179,6 +183,7 @@
                     <a class="upload" href="#">ЗАГРУЗИТЬ ЕЩЁ</a>
                   </div>
                 </article>
+                <section class="choosing">
                 <ul class="choose-pages">
                         <li class="number-page">
                           <a class="numbers numbers-on" href="#">1</a>
@@ -209,12 +214,13 @@
                   <option value="cheap">5</option>
                   <option value="expensive">5</option>
                 </select>
+              </section>
           </section>
 
 
           <article class="subscription">
-            <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-            <h3>Только полезная информация и никакого спама,<br>честное бойскаутское!</h3>
+            <h2 class="subscription-catalog-title-1">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+            <h3 class="subscription-catalog-title-2">Только полезная информация и никакого спама,<br>честное бойскаутское!</h3>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="newsletter-email"></label>
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
