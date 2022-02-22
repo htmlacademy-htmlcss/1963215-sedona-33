@@ -550,7 +550,8 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 5px;
+    padding: 25px;
+    display:inline-block;
 }
 .numbers-on{
     background:#F2F2F2;
