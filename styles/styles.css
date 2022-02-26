@@ -539,23 +539,28 @@
    width: 400px;
   }
 
+  .hotel-list-container{
+    padding-left: 72px;
+  }
+
   .hotel-list{
-    display:flex;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: 339px 349px 348px;
+    gap: 10px;
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
   .hotel-card{
-    width: 340px;
-    height: 438px;
-    margin-right: 10px;
-    padding-top: 10px;
+  width: 340px;
+  height: 438px;
+  display: flex;
+  flex-wrap: wrap;
   }
 
   .hotel-card-title{
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
   .hotel-paragraph{
@@ -564,23 +569,17 @@
   }
 
   .hotel-card-image{
-    margin-bottom: 25px;
+    margin-bottom: 14px;
   }
 
   .hotel-card-link{
     display: inline-block;
   }
 
-  .hotel-card:first-child{
-    margin-left: 72px;
-  }
-  .hotel-card:nth-child(4){
-    margin-left: 72px;
-  }
-
   .rating{
-   display: flex;
-   width: 167px;
+   display: inline-block;
+   box-sizing: border-box;
+   width: 160px;
    height: 37px;
    background-color: #F2F2F2;
    text-align: center;
@@ -591,7 +590,9 @@
    text-transform: uppercase;
    justify-content: center;
    align-items: center;
-  }
+   margin: 0;
+   padding-top: 10px;
+   }
 
 
   .hotel-card-title{
@@ -600,6 +601,16 @@
     line-height: 31px;
     color:#000;
     text-decoration: none;
+  }
+
+  .hotel-paragraph{
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 70px;
+  }
+  .hotel-price{
+    display: inline-block;
+    margin: 0;
   }
 
   .hotel-card-link{
@@ -613,8 +624,10 @@
     padding-top: 9px;
     padding-bottom: 10px;
     display: inline-block;
-    width: 141px;
+    width: 133px;
+    height: 19px;
     text-align: center;
+    margin-bottom: 15px;
      }
     
   .button-detailed{
@@ -622,12 +635,14 @@
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
+    margin-right: 25px;
     }
     .button-favourites{
     background: #83B3D3;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
+    margin-right: 10px;
     }
     .button-favourites-on{
      background: #7DB54F;
@@ -635,6 +650,7 @@
      text-decoration: none;
      border-radius: 4px;
     }
+
 .upload{
     font-weight: 700;
     font-size: 20px;
