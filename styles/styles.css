@@ -651,6 +651,13 @@
      border-radius: 4px;
     }
 
+    .sorting-image{
+      padding: 12px;
+      border: 2px solid #E5E5E5;
+      margin-right: 8px;
+    }
+
+
 .upload{
     font-weight: 700;
     font-size: 20px;
