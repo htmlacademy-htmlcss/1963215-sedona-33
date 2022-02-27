@@ -75,6 +75,7 @@
     }
 
   .navigation-link{
+      position: relative;
       display: block;
       flex-wrap: wrap; 
       padding: 20px 17px;
@@ -783,6 +784,25 @@
 }
 .button-navigation:active{
   background-color: #615048;
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.navigation-link:hover{
+ color: #756257;
+}
+.navigation-link:focus{
+  color:rgba(117, 98, 87, 0.3);
+ }
+
+ .navigation-link-current::before {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  left: 15px;
+  height: 2px;
+  width: 75px;
+  background-color: #756257;
+  content: "";
 }
 
 .button-search:hover{
