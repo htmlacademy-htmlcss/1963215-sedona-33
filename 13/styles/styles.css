@@ -158,11 +158,22 @@
       }
 
     .welcome{
+      position: relative;
       background-image: url("../images/background-index.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       height: 485px;
-      
+      z-index: 1;
+    }
+
+    .welcome::before{
+      background-image: url("../images/notches.svg") ;
+      position: absolute;
+      z-index: 10;
+      content: "";
+      top:428px;
+      height: 57px ;
+      width:1200px ;
     }
   .main-index{
       background-color: #fff;
@@ -554,21 +565,34 @@
   .hotel-card{
   width: 340px;
   height: 438px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 140px 160px;
+  grid-template-rows: 206px 47px 23px 37px 37px;
   }
 
   .hotel-card-title{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color:#000;
+    text-decoration: none;
     margin: 0;
-    margin-bottom: 3px;
+    width: 300px;
+    grid-column: 1/ -1;
+    grid-row: 2/3;
   }
 
   .hotel-paragraph{
+    display: inline-block;
+    grid-column: 1/2;
+    grid-row: 3/4;
     margin: 0;
-    margin-bottom: 10px;
+    padding-top: 5px;
   }
 
   .hotel-card-image{
+    grid-column: 1 / -1;
     margin-bottom: 14px;
   }
 
@@ -592,25 +616,25 @@
    align-items: center;
    margin: 0;
    padding-top: 10px;
+   grid-column: 2/3;
+   grid-row: 5/6;
+   margin-top: 35px ;
    }
 
+   .rating-wrapper{
+     width:160px;
+     grid-column: 1/2;
+     grid-row: 5/6;
+     margin-top: 45px;
+   }
 
-  .hotel-card-title{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 31px;
-    color:#000;
-    text-decoration: none;
-  }
-
-  .hotel-paragraph{
-    display: inline-block;
-    margin-bottom: 15px;
-    margin-right: 70px;
-  }
   .hotel-price{
     display: inline-block;
     margin: 0;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding-top: 5px;
+    padding-left: 15px;
   }
 
   .hotel-card-link{
@@ -621,14 +645,15 @@
   .hotel-card-button{
     font-size: 16px;
     line-height: 21px;
+    font-weight: 700;
     padding-top: 9px;
     padding-bottom: 10px;
     display: inline-block;
     width: 133px;
     height: 19px;
     text-align: center;
-    margin-bottom: 15px;
-     }
+    margin-top: 20px;
+    }
     
   .button-detailed{
     background: #756257;
@@ -636,6 +661,8 @@
     text-decoration: none;
     border-radius: 4px;
     margin-right: 25px;
+    grid-column: 1/2;
+    grid-row: 4/5;
     }
     .button-favourites{
     background: #83B3D3;
@@ -643,13 +670,28 @@
     text-decoration: none;
     border-radius: 4px;
     margin-right: 10px;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin-left: 15px;
+    width: 140px;
     }
     .button-favourites-on{
      background: #7DB54F;
      color: #fff;
      text-decoration: none;
      border-radius: 4px;
+     grid-column: 2/3;
+     grid-row: 4/5;
+     margin-left: 15px;
+     width: 140px;
     }
+
+    .sorting-image{
+      padding: 12px;
+      border: 2px solid #E5E5E5;
+      margin-right: 8px;
+    }
+
 
 .upload{
     font-weight: 700;
